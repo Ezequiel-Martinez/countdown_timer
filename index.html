@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-opacity">
+        <div class="flex-layout">
+            <input type="textarea" class="title" placeholder="Title" value="Title"></input>
+            <div class="flex-timer">
+                <div class="time-box">
+                    <input type="number" id="days-number" placeholder="00" value=""></input>
+                    <span id="days-text">Days</span>
+                </div>
+                <div class="time-box">
+                    <input type="number" id="hours-number" placeholder="00" value=""></input>
+                    <span id="hours-text">Hours</span>
+                </div>
+                <div class="time-box">
+                    <input type="number" id="minutes-number" placeholder="00" value=""></input>
+                    <span id="minutes-text">Minutes</span>
+                </div>
+                <div class="time-box">
+                    <input type="number" id="seconds-number" placeholder="00" value=""></input>
+                    <span id="seconds-text">Seconds</span>
+                </div>
+            </div>
+            <div class="control-buttons">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>

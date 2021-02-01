@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: none;
+    text-align: center;
+}
+
+#start, #stop {
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 30px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    outline: none;
+    transition: transform .2s;
+}
+
+#start:hover, #stop:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+input[type="submit"]:active {
+    transform: scale(.97);
+}
+
+body {
+    background-image: url(./background-16-9.jpg);
+    background-size: cover;
+}
+
+.title {
+    width: 100%;
+    height: auto;
+    font-size: 50px;
+}
+
+.title:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.background-opacity {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.flex-layout {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flex-timer {
+    display: flex;
+    margin: 20px 0;
+    width: 70vw;
+    justify-content: space-evenly;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#days-number, #hours-number, #minutes-number, #seconds-number {
+    width: 100px;
+    font-size: 50px;
+}
+
+#days-number:focus, #hours-number:focus, #minutes-number:focus, #seconds-number:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#days-number::-webkit-inner-spin-button , #hours-number::-webkit-inner-spin-button, #minutes-number::-webkit-inner-spin-button, #seconds-number::-webkit-inner-spin-button, #days-number::-webkit-outer-spin-button , #hours-number::-webkit-outer-spin-button, #minutes-number::-webkit-outer-spin-button, #seconds-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-aspect-ratio: 16/9) {
+    body {
+        background-image: url(./background-mobile.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flex-timer {
+        flex-direction: column;
+    }
+}
